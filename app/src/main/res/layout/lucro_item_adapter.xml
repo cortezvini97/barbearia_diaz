@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/text_view_tituloLucro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Titulo"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_view_lucro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lucro" />
+
+    <TextView
+        android:id="@+id/text_view_gastos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="gastos" />
+
+    <TextView
+        android:id="@+id/text_view_quantidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quantidade" />
+</LinearLayout>

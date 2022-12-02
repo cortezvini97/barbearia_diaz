@@ -14,6 +14,7 @@ import com.vcinsidedigital.barbearia_diaz.R
 import com.vcinsidedigital.barbearia_diaz.adapter.AnoAdapter
 import com.vcinsidedigital.barbearia_diaz.helper.AnoDao
 import com.vcinsidedigital.barbearia_diaz.helper.DBHelper
+import com.vcinsidedigital.barbearia_diaz.helper.FormatApp
 import com.vcinsidedigital.barbearia_diaz.model.Ano
 import java.util.*
 
@@ -91,8 +92,18 @@ class MainActivity : AppCompatActivity()
 
         val id = item.itemId
 
+        var formatApp = FormatApp(applicationContext)
+
         if(id == R.id.action_settings){
-            if(DBHelper.deleteDatabse(applicationContext)){
+            if(formatApp.formatApp()){
+                /*finish()
+                var i = Intent(applicationContext, SplashActivity::class.java)
+                startActivity(i)*/
+
+            }
+        }
+        if(id == R.id.action_format_database){
+            if(formatApp.deleteDatabase()){
                 finish()
                 var i = Intent(applicationContext, SplashActivity::class.java)
                 startActivity(i)

@@ -6,4 +6,8 @@
         android:title="Formatar Aplicativo"
         android:orderInCategory="100"
         app:showAsAction="never" />
+    <item android:id="@+id/action_format_database"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Formatar Banco de Dados" />
 </menu>
